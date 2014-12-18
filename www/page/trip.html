@@ -1,0 +1,17 @@
+<ion-modal-view>
+    <ion-header-bar>
+      <h1 class="title">{{currentTrip.direction}}</h1>
+    </ion-header-bar>
+    <ion-content>
+        <ul class="list">
+            <li class="item"><strong>{{currentTrip.type}}</strong></li>
+            <li class="item">Отправление: {{currentTrip.time}}</li>
+            <li class="item">Дни недели: {{currentTrip.weekdays}}</li>
+            <li class="item">В пути {{currentTrip.tit}} минут</li>
+            <li class="item">Цена: около {{currentTrip.price}} рублей</li>
+        </ul>
+        
+        <button class="button button-full button-calm" ng-click="closeTrip()">Закрыть</button>
+
+    </ion-content>
+  </ion-modal-view>
